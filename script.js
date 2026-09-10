@@ -1,3 +1,4 @@
+document.documentElement.classList.add("js-ready");
 const $=s=>document.querySelector(s), $$=s=>document.querySelectorAll(s);
 const menu=$('.menu-btn'), nav=$('.nav-links'); menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',open)}); $$('.nav-links a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
 const theme=$('.theme-btn'); if(localStorage.getItem('theme')==='dark')document.body.classList.add('dark'); theme.textContent=document.body.classList.contains('dark')?'☀':'☾'; theme.addEventListener('click',()=>{document.body.classList.toggle('dark');const dark=document.body.classList.contains('dark');localStorage.setItem('theme',dark?'dark':'light');theme.textContent=dark?'☀':'☾'});
