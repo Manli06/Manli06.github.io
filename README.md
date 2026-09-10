@@ -1,27 +1,11 @@
 # MANLI H KONYAK — Portfolio
 
-This is a simple 4-file version of the portfolio website.
+This version intentionally contains only four files in the same folder:
+- index.html — website content
+- style.css — design and responsive layout
+- script.js — interactions
+- README.md — simple instructions
 
-## Files
-- `index.html` — all website content and structure
-- `style.css` — design, responsive layout and animations
-- `script.js` — interactions, theme toggle, project filtering, modals, mobile menu and form validation
-- `README.md` — this guide
+Open index.html to run locally. For GitHub Pages, upload these four files to the repository root.
 
-## What was removed
-- Profile/photo section
-- Certificates section
-- Resume section
-- Achievements section
-
-## How to run
-Keep all four files in the same folder, then double-click `index.html` to open the website in your browser.
-
-## Editing
-Open `index.html` in VS Code or another text editor. You can edit your name, education, skills, projects and contact information directly there.
-
-### Add a project
-Copy an existing project card in the Projects section, change its title/description/tags, and add its details to `projectData` in `script.js`.
-
-### Contact form
-The form performs browser-side validation. It does not send email until you connect a backend or form service.
+To change the website, edit index.html. The page content remains visible even if JavaScript is disabled or fails, so the portfolio will not appear blank.

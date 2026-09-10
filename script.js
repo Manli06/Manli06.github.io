@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded",()=>{
 document.documentElement.classList.add("js-ready");
 const $=s=>document.querySelector(s), $$=s=>document.querySelectorAll(s);
 const menu=$('.menu-btn'), nav=$('.nav-links'); menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',open)}); $$('.nav-links a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
@@ -12,3 +13,5 @@ $('#year').textContent=new Date().getFullYear();
 $('#contactForm').addEventListener('submit',e=>{e.preventDefault();const f=e.currentTarget,status=$('#formStatus');if(!f.checkValidity()){status.textContent='Please complete all fields with a valid email address.';f.reportValidity();return}status.textContent='Form validated. No email service is connected yet, so the message has not been sent. Connect Formspree, EmailJS or your own backend in script.js to enable delivery.';f.reset()});
 
 
+
+});
